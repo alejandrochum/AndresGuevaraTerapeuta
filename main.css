@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body,
+html {
+    font-family: 'Nunito', sans-serif;
+}
+
+.btn-primary {
+    background-color: #955f27;
+    color: white;
+    font-weight: 300;
+    border-color: #955f27;
+    font-size: 16px;
+    padding: 10px 20px 10px 20px;
+}
+
+.navbar .btn-primary {
+    background-color: #955f27;
+    color: white;
+    font-weight: 400;
+    border-color: #955f27;
+    font-size: 16px;
+    padding: 7px 20px 7px 20px;
+}
+
+.btn-primary:hover {
+    background-color: #855421;
+    border-color: #855421;
+}
+
+.navbar {
+    background-color: #2e5252;
+    color: #ffffff;
+}
+
+.social-media {
+    background-color: white;
+    box-shadow: 3px 2px 5px 3px rgba(0,0,0,0.16);
+    font-size: 30px;
+    padding: 10px;
+    border-radius: 30px;
+    position:fixed;
+    bottom: 30px;
+    right: 30px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    z-index: 3;
+}
+
+#insta {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    -webkit-background-clip: text;
+            /* Also define standard property for compatibility */
+            background-clip: text;
+    -webkit-text-fill-color: transparent;    
+  }
+
+/* ===== Hero ===== */
+
+.hero {
+    position: relative;
+    text-align: center;
+    height: 700px;
+    overflow: hidden;
+}
+
+.hero h1 {
+    font-size: 70px;
+}
+
+.hero h5 {
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.hero-img {
+    min-width: 100%;
+    height: 710px;
+    object-fit: cover;
+}
+
+.hero-img-container {
+    height: 100%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.centered {
+    padding-top: 100px;
+    padding-left: 100px;
+    text-align: start;
+    color: white;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* ===== About me ===== */
+
+.about-me {
+    color: #2e5252;
+    text-align: center;
+}
+
+.about-me p {
+    font-size: 16px;
+    font-weight: 300;
+    text-align: justify;
+    text-justify: inter-word;
+    line-height: 1.8em;
+    margin-top: 40px;
+}
+
+.about-me-right {
+    padding: 80px 200px 100px 200px;
+}
+
+.about-me-left {
+    background-color: #5f6a4c;
+    padding: 150px 0px 50px 0px;
+}
+
+/* ===== experiencia ===== */
+
+.experiencia {
+    background-color: #f2ece4;
+    min-height: 500px;
+    padding: 150px 50px 150px 50px;
+    color: #2e5252;
+}
+
+.experiencia .row {
+    padding: 50px 150px 50px 150px;
+}
+
+/* ===== primera consulta ===== */
+
+.primera-consulta {
+    background-color: #EBDFCF;
+    position: relative;
+    padding: 80px 0px 80px 0px;
+}
+
+.card-consulta {
+    text-align: center;
+    width: 500px;
+    padding: 70px;
+    background-color: white;
+
+    position: absolute;
+    top: 50%;
+    left: 75%;
+    transform: translate(-75%, -50%);
+}
+
+.primera-consulta img {
+    display: block;
+    margin-left: 20%;
+    margin-right: auto;
+    width: 500px;
+}
+
+
+/* ===== Testimonios ===== */
+.testimonios {
+    font-weight: 300;
+    background-color: white;
+    color: #2e5252;
+    text-align: center;
+    padding: 120px;
+}
+
+
+/* === Parallax 1 === */
+.parallax-planta {
+    background-image: url('imgs/planta1.png');
+    min-height: 400px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    color: white;
+    padding-top: 150px;
+    padding-left: 250px;
+}
+
+/* ===== Contact Me ===== */
+.contact-me {
+    background-color: #2e5252;
+    color: white;
+    padding: 80px 300px 80px 300px;
+}
+
+.contact-me p {
+    margin: 2px;
+    font-weight: 200;
+}
+
+@media only screen and (max-width: 992px) {
+
+    .social-media {
+        font-size: 25px;
+        position:fixed;
+    
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        
+        z-index: 3;
+    }
+
+    .social-media .bi-facebook,
+    .social-media .bi-whatsapp {
+        margin-right: 10px;
+    }
+
+    /* ===== Hero ===== */
+
+    .hero {
+        position: relative;
+        text-align: center;
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    .hero-img {
+        min-width: 100%;
+        height: 100vh;
+        object-fit: cover;
+    }
+
+    .hero-img-container {
+        height: 100%;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .centered {
+        padding-top: 200px;
+        padding-left: 20px;
+        text-align: center;
+        color: white;
+        height: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .hero h1 {
+        font-size: clamp(2rem, 12vw, 70px);
+    }
+
+    .hero h5 {
+        font-size: clamp(1rem, 6vw, 30px);
+        font-weight: 300;
+    }
+
+    /* ===== About me ===== */
+
+    .about-me {
+        color: #2e5252;
+        text-align: center;
+    }
+
+    .about-me p {
+        font-size: 16px;
+        font-weight: 300;
+        text-align: justify;
+        text-justify: inter-word;
+        line-height: 1.8em;
+        margin-top: 40px;
+    }
+
+    .about-me-right {
+        padding: 40px 40px 40px 40px;
+    }
+
+    .about-me-left {
+        background-color: #5f6a4c;
+        padding: 30px 0px 30px 0px;
+    }
+
+    /* ===== experiencia ===== */
+
+    .experiencia {
+        background-color: #f2ece4;
+        /* min-height: 500px; */
+        /* padding: 80px 50px 150px 50px; */
+        color: #2e5252;
+    }
+
+    .experiencia .row {
+        padding: 50px 0px 50px 0px;
+    }
+
+    /* ===== primera consulta ===== */
+
+    .primera-consulta {
+        background-color: #EBDFCF;
+        position: static;
+        padding: 80px 0px 80px 0px;
+    }
+
+    .card-consulta {
+        margin: 0 auto;
+        text-align: center;
+        width: 90%;
+        padding: 70px;
+        background-color: white;
+
+        position: static;
+        top: 0%;
+        left: 0%;
+        transform: translate(0%, 0%);
+    }
+
+    .primera-consulta img {
+        display: block;
+        margin: 0 auto;
+        width: 90%;
+        max-height: 300px;
+        object-fit: cover;
+    }
+
+    /* === Parallax 1 === */
+    .parallax-planta {
+        background-image: url('imgs/planta1.png');
+        min-height: 400px;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        color: white;
+        padding-top: 250px;
+        padding-left: 20px;
+    }
+
+    /* ===== Testimonios ===== */
+.testimonios {
+    font-weight: 300;
+    background-color: white;
+    color: #2e5252;
+    text-align: center;
+    padding: 40px;
+}
+
+
+    /* ===== Contact Me ===== */
+    .contact-me {
+        background-color: #2e5252;
+        color: white;
+        padding: 80px 20px 80px 30px;
+    }
+
+    .contact-me p {
+        margin: 2px;
+        font-weight: 200;
+    }
+}
